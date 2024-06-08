@@ -1,4 +1,5 @@
 # Домашнее задание к занятию "8. EventSource, Websockets"
+**CI** [![Build status](https://ci.appveyor.com/api/projects/status/23aalpbxtdx9jaun?svg=true)](https://ci.appveyor.com/project/donecvolsk/eventsource-websockets)
 
 Правила сдачи задания:
 
