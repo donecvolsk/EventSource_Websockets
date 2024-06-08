@@ -19,7 +19,7 @@ export default class Chat {
     const handlerClick = (e) => {
       e.preventDefault();
       this.you = this.inputNickname.value;
-      fetch('http://localhost:10000/new-user', {
+      fetch('https://eventsource-websockets-backendba.onrender.com/new-user', {
         method: 'POST',
         body: JSON.stringify({ name: `${this.inputNickname.value}` }),
       })
@@ -43,7 +43,7 @@ export default class Chat {
 
   //Метод для работы с полем чата
   area() {
-    this.ws = new WebSocket('ws://localhost:10000');
+    this.ws = new WebSocket('ws://eventsource-websockets-backendba.onrender.com');
 
     this.userArea = this.container.querySelector('.modalChat__user'); //Поле списка ползователей
     this.chatArea = this.container.querySelector('.modalChat__chat'); //Поле чата ползователей
