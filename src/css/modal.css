@@ -137,6 +137,16 @@
 .user {
   padding-left: 15px;
 }
+
+.chatUser {
+  padding-left: 15px;
+}
+
+.chatRight {
+  text-align: right;
+  padding-right: 15px;
+}
+
 .right {
 text-align: right;
 padding-right: 15px;

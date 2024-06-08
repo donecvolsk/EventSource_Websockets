@@ -76,12 +76,12 @@ export default class Chat {
         if (data.user === this.you) {
           this.chatArea.insertAdjacentHTML(
             'beforeEnd',
-            `<p class="right">YOU: ${data.msg}</p>`
+            `<p class="chatRight">YOU: ${data.msg}</p>`
           );
         } else {
           this.chatArea.insertAdjacentHTML(
             'beforeEnd',
-            `<p class="user">${data.user}:  ${data.msg}</p>`
+            `<p class="chatUser">${data.user}:  ${data.msg}</p>`
           );
         }
       }
