@@ -44,7 +44,7 @@ export default class Chat {
   //Метод для работы с полем чата
   area() {
     this.ws = new WebSocket(
-      'ws://eventsource-websockets-backendba.onrender.com'
+      'wss://eventsource-websockets-backendba.onrender.com'
     );
 
     this.userArea = this.container.querySelector('.modalChat__user'); //Поле списка ползователей
